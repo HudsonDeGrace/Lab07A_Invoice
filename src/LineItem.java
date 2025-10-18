@@ -19,6 +19,10 @@ public class LineItem extends Product{
         this.quantity = quantity;
     }
 
+    /**
+     * The total cost of the line item price of the product times the quantity bought
+     * @return returns a double representing the total price
+     */
     public double getCalculatedTotal(){
         return quantity * price;
     }

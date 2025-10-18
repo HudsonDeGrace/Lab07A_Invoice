@@ -19,6 +19,10 @@ public class Customer extends Address{
         this.name = name;
     }
 
+    /**
+     * Makes the full customer block to be set for the JLabel
+     * @return returns the full formatted string customer block
+     */
     public String getCustomerBlock(){
         return "<html>" + name + "<br />" + getFormattedAddress() + "</html>";
     }

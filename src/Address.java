@@ -55,6 +55,10 @@ public class Address {
         this.zip = zip;
     }
 
+    /**
+     * Makes a string formatted for a JLabel
+     * @return returns a string on the inputted address values
+     */
     public String getFormattedAddress() {
         if(Objects.equals(apt, "")){
             return  street + "<br />" + city + ", " + state + " " + zip;
