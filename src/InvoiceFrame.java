@@ -1,6 +1,5 @@
 import javax.swing.*;
 import java.awt.*;
-import java.util.ArrayList;
 
 public class InvoiceFrame extends JFrame {
     JPanel MainPnl, TitlePnl, AddressPnl, InvoicePnl;
@@ -89,25 +88,4 @@ public class InvoiceFrame extends JFrame {
         TitleLbl.setPreferredSize(new Dimension(400,100));
         TitlePnl.add(TitleLbl, BorderLayout.NORTH);
     }
-
-    public static class Invoice{
-        public double totalAmtDue;
-
-        public Invoice(double totalAmountDue) {
-            this.totalAmtDue = totalAmountDue;
-        }
-
-        public double getTotalAmtDue() {
-            return totalAmtDue;
-        }
-
-        public void setTotalAmtDue(double totalAmtDue) {
-            this.totalAmtDue = totalAmtDue;
-        }
-
-        public double calculateTotalAmtDue(){
-            return totalAmtDue;
-        }
-    }
-
 }
